@@ -5,7 +5,9 @@
   "scripts": {
     "start": "node app",
     "debug": "node --inspect app",
-    "build": "xcopy node_modules\\@webcomponents\\webcomponentsjs\\webcomponents-bundle.js public /Y"
+    "build": "xcopy node_modules\\@webcomponents\\webcomponentsjs\\webcomponents-bundle.js public /Y",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "description": "PWA-push",
   "author": {
@@ -22,9 +24,11 @@
     "nedb": "^1.8.0",
     "pug": "^2.0.0-beta6",
     "serve-favicon": "^2.3.0",
-    "web-push": "^3.3.3"
+    "web-push": "^3.3.3",
+    "snyk": "^1.316.1"
   },
   "engines": {
     "node": "~6.10.x"
-  }
+  },
+  "snyk": true
 }
