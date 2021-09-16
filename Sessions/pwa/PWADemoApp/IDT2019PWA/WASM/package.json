@@ -7,7 +7,7 @@
     "jquery": "^3.2.1",
     "jquery.facedetection": "^2.0.2",
     "mocha": "^3.4.2",
-    "nodemon": "^1.11.0"
+    "nodemon": "^2.0.3"
   },
   "devDependencies": {
     "mocha": "^3.4.2"
